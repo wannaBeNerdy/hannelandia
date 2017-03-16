@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HANNELANDIA</string>
+    <string name="subname">Learning through play</string>
+    <string name="date">THU 8.3.2017 4:30 PM</string>
+    <string name="description">Power of Playful Learning in Early Education</string>
+    <string name="address">Keskuskatu 3, Helsinki</string>
+    <string name="register">Register</string>
+    <string name="price">80€ (material included)</string>
+    <string name="info">Leikki on lapselle luontainen tapa toimia, oppia ja käsitellä tietoa.
+        Elämykselliset oppimiskokonaisuudet tukevat lasten leikki- ja oppimaan oppimisen taitoja
+        sekä sitouttaa lapset emotionaalisesti paremmin toimintaan. Kuvat, videot, tabletilla
+        tehdyt omat kirjat ja erilaiset oppimista tukevat ohjelmat motivoivat lasta oppimaan
+        ja ilmaisemaan itseään monipuolisesti.</string>
+</resources>
