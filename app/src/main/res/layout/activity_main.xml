@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,7 +7,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,24 +17,26 @@
             <!-- Main image and headings -->
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom">
 
                 <ImageView
                     android:id="@+id/MainImage"
                     style="@style/MainImage"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/hannelandia_img" />
+                    android:src="@drawable/hannelandia" />
 
 
                 <TextView
                     android:id="@+id/hannelandia"
                     style="@style/Hannelandia"
+                    android:layout_above="@id/subheading"
                     android:text="@string/app_name" />
 
                 <TextView
                     android:id="@+id/subheading"
                     style="@style/Subheading"
+                    android:layout_alignParentBottom="true"
                     android:text="@string/subname" />
 
             </RelativeLayout>
@@ -62,52 +62,56 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="20dp">
 
-                <ImageView
-                    android:id="@+id/Address"
-                    style="@style/Address"
-                    android:src="@drawable/Address" />
 
                 <TextView
                     android:id="@+id/Address.text"
                     style="@style/Address.text"
+                    android:drawableLeft="@drawable/address"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:gravity="center"
                     android:text="@string/address" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
 
-                <ImageView
-                    android:id="@+id/Price"
-                    style="@style/Price"
-                    android:src="@drawable/Price" />
 
                 <TextView
                     style="@style/Price.text"
+                    android:drawableLeft="@drawable/price"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:gravity="center"
                     android:text="@string/price" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
 
-                <ImageView
-                    style="@style/Info"
-                    android:src="@drawable/Info" />
 
                 <TextView
                     style="@style/Info.text"
+                    android:drawableLeft="@drawable/info"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:gravity="top"
                     android:text="@string/info" />
             </LinearLayout>
 
             <Button
                 style="@style/Register"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
                 android:text="@string/register" />
+
 
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>
